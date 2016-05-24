@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cambiador de divisas</string>
+    <string-array name ="currencies">
+        <item>Euro (EUR)</item>
+        <item>Esloti polaco (PLN)</item>
+        <item>Dolár estadounidense (USD)</item>
+        <item>Libra esterlina (GBP)</item>
+        <item>Nuevo séquel (ILS)</item>
+        <item>Renminbi (CNY)</item>
+    </string-array>
+    <string name="Value">Valor</string>
+    <string name="Result">Resultado</string>
+    <string name="convertButton">Convierta</string>
+    <string name="currencyCollision">Eliga una divisa distinta para el destino</string>
+    <string name="defaultRates">Las tarifas estándares están disponible</string>
+    <string name="destLabel">Quiero esta divisa:</string>
+    <string name="dialogPositive">Continúe</string>
+    <string name="dlRatesFail">El descargo de las tarifas ha fracasado</string>
+    <string name="dlRatesSuccess">La descarga de las tarifas terminó con éxito</string>
+    <string name="downloaded">Descargado en:</string>
+    <string name="fileReadSuccess">Las tarifas se han cargado con éxito</string>
+    <string name="processRatesFailed">El procesamiento de las tarifas ha fracasado</string>
+    <string name="sourceLabel">Tengo esa divisa:</string>
+    <string name="updateRatesSuccess">Las tarifas se han actualizado con éxito</string>
+    <string name="dialogContent">No hay tarifas actualizadas disponibles. Por eso, tarifas estándares serán cargado. ¿Usted quiere continuar?</string>
+    <string name="calcFail">La calculación ha fracasado. Porfavor espiere hasta que las tarifas se cargan.</string>
+    <string name="dialogNegative">Salga</string>
+    <string name="noInput">El cómputo no fue posible.  Verifique porfavor sí ha entrado un valor en el campo de valor y lo es un decimal positivo. </string>
+</resources>

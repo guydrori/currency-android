@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="currencies">
+        <item>Euro (EUR)</item>
+        <item>Złoty (PLN)</item>
+        <item>Dolar amerykański (USD)</item>
+        <item>Funt szterling (GBP)</item>
+        <item>Nowy Izraelski Szekel (ILS)</item>
+        <item>Renminbi (CNY)</item>
+    </string-array>
+    <string name="Result">Wynik</string>
+    <string name="Value">Wartość</string>
+    <string name="convertButton">Oblicz</string>
+    <string name="currencyCollision">Niech wybiera inny walut docelowy</string>
+    <string name="defaultRates">Domyślny kursy byly wczytane</string>
+    <string name="destLabel">Niech wybiera walut docelowy</string>
+    <string name="dialogContent">Nowoczesny kursy nie są dostępne. Z tego powodu, domyślne kursy będą wczytane. Chce ciągnąć dalej?</string>
+    <string name="dialogNegative">Niech Opuśc</string>
+    <string name="dialogPositive">Niech ciągnie dalej</string>
+    <string name="dlRatesFail">Nie udało się pobrać kursy</string>
+    <string name="dlRatesSuccess">Udało się pobrać kursy</string>
+    <string name="downloaded">Pobrane w:</string>
+    <string name="fileReadSuccess">Udało się wczytać kursy z piłk</string>
+    <string name="processRatesFailed">Nie udało się przetwarzać kursy</string>
+    <string name="sourceLabel">Niech wybiera kurs źródłowy</string>
+    <string name="updateRatesSuccess">Udało się aktualizować kursy</string>
+    <string name="app_name">Kalkulator Walut</string>
+    <string name="calcFail">Nie udało się kalkulacja. Proszę czekać do wczytania kursy</string>
+    <string name="noInput">Nie udała się kalkulacja. Proszę zweryfikować czy w pole wartość jest wpisany pozytywny numer dziesiętny.</string>
+</resources>

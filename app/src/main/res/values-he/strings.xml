@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ממיר מטבעות</string>
+    <string-array name ="currencies">
+        <item> יורו (EUR)</item>
+        <item>זלוטי פולני (PLN)</item>
+        <item>דולר אמריקאי (USD)</item>
+        <item>לירות שטרלינג (GBP)</item>
+        <item>שקלים חדשים (ILS)</item>
+        <item>יואן סיני (CNY)</item>
+    </string-array>
+    <string name ="convertButton">המר</string>
+    <string name ="Value">ערך</string>
+    <string name ="Result">תוצאה</string>
+    <string name ="sourceLabel">בחר מטבע מקור:</string>
+    <string name ="destLabel">בחר מטבע יעד:</string>
+    <string name ="dialogContent">לא נמצאו שערים עדכניים. לכן, יטענו שערים משוערים. האם תרצה\י להמשיך?</string>
+    <string name ="dialogPositive">המשך</string>
+    <string name ="dialogNegative">צא</string>
+    <string name ="defaultRates">שערים משוערים נטענו</string>
+    <string name ="fileReadSuccess">טעינת שערים מקובץ עברה בהצלחה</string>
+    <string name="dlRatesSuccess">הורדת שערים עברה בהצלחה</string>
+    <string name ="dlRatesFail">הורדת שערים נכשלה</string>
+    <string name ="currencyCollision">בחר מטבע יעד אחר</string>
+    <string name ="updateRatesSuccess">שערים עודכנו בהצלחה</string>
+    <string name ="processRatesFailed">עיבוד שיוערים נכשל</string>
+    <string name ="downloaded">ההורד בתאריך</string>
+    <string name="calcFail">החישוב נכשל. אנא המתן\י עד שהשערים יטענו</string>
+    <string name="noInput">החישוב לא הצליח. אני בדוק אם הכנסת סכום בשדה של הערך ושהמספר הינו מספר עשרוני חיובי. </string>
+
+</resources>
