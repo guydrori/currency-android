@@ -10,9 +10,7 @@ import java.io.FileInputStream;
 import java.util.Date;
 import java.util.HashMap;
 
-/**
- * Created by drori on 06/03/2016.
- */
+
 class IOManager {
     private final File file;
     private HashMap<String, Double> inputMap;
@@ -51,7 +49,7 @@ class IOManager {
         return inputDate;
     }
     public boolean readable() {
-        return file.exists() || !file.isDirectory() || !file.canRead();
+        return file.exists() && !file.isDirectory() && file.canRead();
     }
 
 }

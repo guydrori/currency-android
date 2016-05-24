@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private IOManager file;
     static MainActivity main;
     private String setCurrencyString(String choice) {
+        //Method to ensure consistency with strings for later checking and printing
         String outcome= "";
         if (choice.contains("EUR")) {
             outcome = "EUR";
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonClick (View view) {
         EditText inputField = (EditText)findViewById(R.id.value_input);
         try {
+            //Prepping for calculation and display
             double input = Double.parseDouble(inputField.getText().toString());
             double result = convertCurrency(input, option1, option2);
             DecimalFormat formatter = new DecimalFormat("#0.00");
@@ -73,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private double convertCurrency(double input, String option1, String option2) {
+        //Calculation method:
         if (option1.equals(option2)) {
+            //Unnecessary at the moment but kept because of the possibility that it might happen if something goes wrong.
             Toast.makeText(getApplicationContext(), R.string.currencyCollision,Toast.LENGTH_LONG).show();
             return input;
        } else {
@@ -167,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putSerializable("optionList", (Serializable) options);
     }
     private Bundle saveState() {
+        //Allows rotation and task switching.
         Bundle save = new Bundle();
         save.putBoolean("ran", true);
         save.putSerializable("rates", ratesMap);
@@ -209,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                 this, android.R.layout.simple_spinner_item, options);
         srcListAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
-        OnItemSelectedListener srcSpinnerListener = new OnItemSelectedListener() {
+        OnItemSelectedListener srcSpinnerListener = new OnItemSelectedListener() { //Listener for the source currency spinner
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 optionsCopy.clear();
@@ -233,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
                 this, android.R.layout.simple_spinner_item, optionsCopy);
         destListAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
-        OnItemSelectedListener destSpinnerListener = new OnItemSelectedListener() {
+        OnItemSelectedListener destSpinnerListener = new OnItemSelectedListener() { //Listener for the destination currency spinner
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 option2= setCurrencyString(optionsCopy.get(position));
@@ -247,7 +252,9 @@ public class MainActivity extends AppCompatActivity {
         dest_spinner.setAdapter(destListAdapter);
         dest_spinner.setOnItemSelectedListener(destSpinnerListener);
 
-
+        /*
+            Different listeners are necessary for the implementation of changing lists (e.g. when you select a source currency remove that currency from destinations)
+         */
 
 
 
@@ -258,6 +265,7 @@ public class MainActivity extends AppCompatActivity {
         return activeNetwork != null && activeNetwork.isConnectedOrConnecting();
     }
     private void loadDefaultRates() {
+        //This only occurs if there is no Internet connection and if no cached rates are avilable.
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage(R.string.dialogContent);
         dialogBuilder.setPositiveButton(R.string.dialogPositive, new DialogInterface.OnClickListener() {
