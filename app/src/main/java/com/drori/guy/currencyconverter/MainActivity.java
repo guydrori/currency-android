@@ -3,6 +3,7 @@ package com.drori.guy.currencyconverter;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -11,6 +12,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -18,6 +21,9 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.drori.guy.currencyconverter.about.AboutActivity;
+
 import org.json.JSONObject;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -194,12 +200,9 @@ public class MainActivity extends AppCompatActivity {
                 readFile(file);
             }
             options = new ArrayList<String>();
-            options.add(currencyNames[0]);
-            options.add(currencyNames[1]);
-            options.add(currencyNames[2]);
-            options.add(currencyNames[3]);
-            options.add(currencyNames[4]);
-            options.add(currencyNames[5]);
+            for (int i = 0; i < currencyNames.length; ++i) {
+                options.add(currencyNames[i]);
+            }
             optionsCopy = new ArrayList<String>();
             savedInstanceState = saveState();
             onSaveInstanceState(savedInstanceState);
@@ -258,6 +261,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.about) {
+            Intent aboutIntent = new Intent(getApplicationContext(), AboutActivity.class);
+            startActivity(aboutIntent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
     private boolean checkInternetConnectivity() {
         ConnectivityManager cm = (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -27,4 +27,5 @@
     <string name="calcFail">La calculación ha fracasado. Porfavor espiere hasta que las tarifas se cargan.</string>
     <string name="dialogNegative">Salga</string>
     <string name="noInput">El cómputo no fue posible.  Verifique porfavor sí ha entrado un valor en el campo de valor y lo es un decimal positivo. </string>
+    <string name="about">Información sobre la aplicación</string>
 </resources>

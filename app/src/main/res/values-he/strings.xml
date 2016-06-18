@@ -27,5 +27,6 @@
     <string name ="downloaded">ההורד בתאריך</string>
     <string name="calcFail">החישוב נכשל. אנא המתן\י עד שהשערים יטענו</string>
     <string name="noInput">החישוב לא הצליח. אני בדוק אם הכנסת סכום בשדה של הערך ושהמספר הינו מספר עשרוני חיובי. </string>
+    <string name="about">אודות</string>
 
 </resources>

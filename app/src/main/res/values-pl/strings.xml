@@ -27,4 +27,5 @@
     <string name="app_name">Kalkulator Walut</string>
     <string name="calcFail">Nie udało się kalkulacja. Proszę czekać do wczytania kursy</string>
     <string name="noInput">Nie udała się kalkulacja. Proszę zweryfikować czy w pole wartość jest wpisany pozytywny numer dziesiętny.</string>
+    <string name="about">O aplikacji</string>
 </resources>

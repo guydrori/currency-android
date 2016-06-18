@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Currency Converter</string>
-    <string-array name ="currencies">
+    <string-array name="currencies">
         <item>Euro (EUR)</item>
         <item>Polish złoty (PLN)</item>
         <item>American Dollar (USD)</item>
@@ -9,22 +9,27 @@
         <item>Israeli New Shekel (ILS)</item>
         <item>Chinese Yuan (CNY)</item>
     </string-array>
-    <string name ="convertButton">Convert</string>
-    <string name ="Value">Value</string>
-    <string name ="Result">Result</string>
-    <string name ="sourceLabel">Choose origin currency:</string>
-    <string name ="destLabel">Choose destination currency:</string>
-    <string name ="dialogContent">No up-to-date rates are available. Therefore, default approximated rates will be loaded. Would you like to continue?</string>
-    <string name ="dialogPositive">Continue</string>
-    <string name ="dialogNegative">Quit</string>
-    <string name ="defaultRates">Default rates loaded</string>
-    <string name ="fileReadSuccess">Rates successfully loaded from file</string>
+    <string name="convertButton">Convert</string>
+    <string name="Value">Value</string>
+    <string name="Result">Result</string>
+    <string name="sourceLabel">Choose origin currency:</string>
+    <string name="destLabel">Choose destination currency:</string>
+    <string name="dialogContent">No up-to-date rates are available. Therefore, default approximated rates will be loaded. Would you like to continue?</string>
+    <string name="dialogPositive">Continue</string>
+    <string name="dialogNegative">Quit</string>
+    <string name="defaultRates">Default rates loaded</string>
+    <string name="fileReadSuccess">Rates successfully loaded from file</string>
     <string name="dlRatesSuccess">Rates downloaded successfully</string>
-    <string name ="dlRatesFail">Downloading rates failed</string>
-    <string name ="currencyCollision">Choose a different destination currency</string>
-    <string name ="updateRatesSuccess">Rates updated successfully</string>
-    <string name ="processRatesFailed">Processing rates failed</string>
-    <string name ="downloaded">Downloaded on:</string>
-    <string name ="calcFail">Calculation failed. Please wait for the rates to load</string>
-    <string name = "noInput">Could not calculate. Please check that you have entered a value in the Value field and that it is a positive decimal.</string>
+    <string name="dlRatesFail">Downloading rates failed</string>
+    <string name="currencyCollision">Choose a different destination currency</string>
+    <string name="updateRatesSuccess">Rates updated successfully</string>
+    <string name="processRatesFailed">Processing rates failed</string>
+    <string name="downloaded">Downloaded on:</string>
+    <string name="calcFail">Calculation failed. Please wait for the rates to load</string>
+    <string name="noInput">Could not calculate. Please check that you have entered a value in the Value field and that it is a positive decimal.</string>
+    <string name="about">About</string>
+    <string name ="github">Source: http://github.com/guydrori/currency-android</string>
+    <string name = "fixer">Uses the <a href = "http://www.fixer.io">fixer.io</a> API for exchange rates</string>
+    <string name = "created">Created with love in Poland :-)</string>
+    <string name = "license">The source code is licensed under the <b>GNU GPLv3</b> open-source license</string>
 </resources>
