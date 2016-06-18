@@ -13,13 +13,13 @@
     <string name="Result">Resultado</string>
     <string name="convertButton">Convierta</string>
     <string name="currencyCollision">Eliga una divisa distinta para el destino</string>
-    <string name="defaultRates">Las tarifas estándares están disponible</string>
+    <string name="defaultRates">Los tipos de cambio estándares están disponible</string>
     <string name="destLabel">Quiero esta divisa:</string>
     <string name="dialogPositive">Continúe</string>
-    <string name="dlRatesFail">El descargo de las tarifas ha fracasado</string>
-    <string name="dlRatesSuccess">La descarga de las tarifas terminó con éxito</string>
+    <string name="dlRatesFail">El descargo de los tipos de cambio  ha fracasado</string>
+    <string name="dlRatesSuccess">La descarga de los tipos de cambio  terminó con éxito</string>
     <string name="downloaded">Descargado en:</string>
-    <string name="fileReadSuccess">Las tarifas se han cargado con éxito</string>
+    <string name="fileReadSuccess">Los tipos de cambio  se han cargado con éxito</string>
     <string name="processRatesFailed">El procesamiento de las tarifas ha fracasado</string>
     <string name="sourceLabel">Tengo esa divisa:</string>
     <string name="updateRatesSuccess">Las tarifas se han actualizado con éxito</string>
@@ -28,4 +28,8 @@
     <string name="dialogNegative">Salga</string>
     <string name="noInput">El cómputo no fue posible.  Verifique porfavor sí ha entrado un valor en el campo de valor y lo es un decimal positivo. </string>
     <string name="about">Información sobre la aplicación</string>
+    <string name="created">Creado en Polonia con pasión :-)</string>
+    <string name="fixer">Usa el API de <a href="http://www.fixer.io">fixer.io</a> para los tipos de cambio </string>
+    <string name="github">Código fuente: http://github.com/guydrori/currency-android</string>
+    <string name="license">El código fuento está bajo la licencia <b>Apache 2.0</b> </string>
 </resources>

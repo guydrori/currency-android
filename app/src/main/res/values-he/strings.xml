@@ -28,5 +28,9 @@
     <string name="calcFail">החישוב נכשל. אנא המתן\י עד שהשערים יטענו</string>
     <string name="noInput">החישוב לא הצליח. אני בדוק אם הכנסת סכום בשדה של הערך ושהמספר הינו מספר עשרוני חיובי. </string>
     <string name="about">אודות</string>
+    <string name="created">מיוצרת בפולין באהבה :-)</string>
+    <string name="fixer">משתמשת ב API <a href="http://www.fixer.io">fixer.io</a> לשערי מטבע</string>
+    <string name="github">קוד מקור: http://github.com/guydrori/currency-android</string>
+    <string name="license">קוד המקור ניתן תחת רישיון קוד פתוח <b>אפאשי 2.0</b></string>
 
 </resources>

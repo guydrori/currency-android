@@ -31,6 +31,7 @@ import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -38,34 +39,18 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Spinner source_spinner;
     private Spinner dest_spinner;
     private List<String> options;
     private List<String> optionsCopy;
     private ArrayAdapter<String> destListAdapter;
     private String option1;
     private String option2;
-    private HashMap ratesMap = new HashMap<>();
+    private HashMap<String,Double> ratesMap = new HashMap<>();
     private IOManager file;
     static MainActivity main;
     private String setCurrencyString(String choice) {
         //Method to ensure consistency with strings for later checking and printing
-        String outcome= "";
-        if (choice.contains("EUR")) {
-            outcome = "EUR";
-        } else if (choice.contains("PLN")) {
-            outcome = "PLN";
-        } else if (choice.contains("USD")) {
-            outcome = "USD";
-        } else if (choice.contains("GBP")){
-            outcome = "GBP";
-        } else if (choice.contains("ILS")) {
-            outcome = "ILS";
-        } else if (choice.contains("CNY")) {
-            outcome = "CNY";
-        }
-
-        return outcome;
+        return choice.substring((choice.indexOf('(')+1),choice.lastIndexOf(')'));
     }
     public void buttonClick (View view) {
         EditText inputField = (EditText)findViewById(R.id.value_input);
@@ -75,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             double result = convertCurrency(input, option1, option2);
             DecimalFormat formatter = new DecimalFormat("#0.00");
             EditText resultField = (EditText) findViewById(R.id.result_field);
-            resultField.setText(formatter.format(result) + " " + option2);
+            resultField.setText(getString(R.string.result,formatter.format(result),option2));
         } catch (Exception e) {
             Toast.makeText(this.getApplicationContext(), R.string.noInput, Toast.LENGTH_LONG).show();
         }
@@ -140,14 +125,23 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(result);
             try {
                 JSONObject jsonObject = new JSONObject(result);
-                String rates= jsonObject.getString("rates");
                 Log.i("JSON", "String accepted");
                 JSONObject data = jsonObject.getJSONObject("rates");
-                ratesMap.put("USD", data.getDouble("USD"));
-                ratesMap.put("GBP", data.getDouble("GBP"));
-                ratesMap.put("ILS", data.getDouble("ILS"));
-                ratesMap.put("CNY", data.getDouble("CNY"));
-                ratesMap.put("PLN", data.getDouble("PLN"));
+                ratesMap.put("USD", data.getDouble("USD")); ratesMap.put("GBP", data.getDouble("GBP"));
+                ratesMap.put("ILS", data.getDouble("ILS")); ratesMap.put("CNY", data.getDouble("CNY"));
+                ratesMap.put("PLN", data.getDouble("PLN")); ratesMap.put("AUD", data.getDouble("AUD"));
+                ratesMap.put("JPY", data.getDouble("JPY")); ratesMap.put("CHF", data.getDouble("CHF"));
+                ratesMap.put("INR", data.getDouble("INR")); ratesMap.put("HUF", data.getDouble("HUF"));
+                ratesMap.put("NOK", data.getDouble("NOK")); ratesMap.put("BGN", data.getDouble("BGN"));
+                ratesMap.put("KRW", data.getDouble("KRW")); ratesMap.put("RON", data.getDouble("RON"));
+                ratesMap.put("CZK", data.getDouble("CZK")); ratesMap.put("DKK", data.getDouble("DKK"));
+                ratesMap.put("MXN", data.getDouble("MXN")); ratesMap.put("RUB", data.getDouble("RUB"));
+                ratesMap.put("CAD", data.getDouble("CAD")); ratesMap.put("HRK", data.getDouble("HRK"));
+                ratesMap.put("SEK", data.getDouble("SEK")); ratesMap.put("SEK", data.getDouble("SEK"));
+                ratesMap.put("HKD", data.getDouble("HKD")); ratesMap.put("SGD", data.getDouble("SGD"));
+                ratesMap.put("THB", data.getDouble("THB")); ratesMap.put("PHP", data.getDouble("PHP"));
+                ratesMap.put("ZAR", data.getDouble("ZAR")); ratesMap.put("TRY", data.getDouble("TRY"));
+                ratesMap.put("BRL", data.getDouble("BRL")); ratesMap.put("NZD", data.getDouble("NZD"));
                 Log.i("JSON", "Rates processed successfully");
                 file.rewriteAndSave(ratesMap);
                 Log.i("I/O", "Map saved succesfully");
@@ -184,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
         save.putSerializable("optionList", (Serializable) options);
         return save;
     }
+    @SuppressWarnings("unchecked")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -199,21 +194,18 @@ public class MainActivity extends AppCompatActivity {
             }else {
                 readFile(file);
             }
-            options = new ArrayList<String>();
-            for (int i = 0; i < currencyNames.length; ++i) {
-                options.add(currencyNames[i]);
-            }
-            optionsCopy = new ArrayList<String>();
+            options = new ArrayList<>(Arrays.asList(currencyNames));
+            optionsCopy = new ArrayList<>();
             savedInstanceState = saveState();
             onSaveInstanceState(savedInstanceState);
         } else {
             options = (ArrayList<String>)savedInstanceState.getSerializable("optionList");
-            ratesMap = (HashMap) savedInstanceState.getSerializable("rates");
-            optionsCopy = new ArrayList<String>();
+            ratesMap = (HashMap<String,Double>) savedInstanceState.getSerializable("rates");
+            optionsCopy = new ArrayList<>();
         }
-        source_spinner = (Spinner) findViewById(R.id.source_chooser);
+        Spinner source_spinner = (Spinner) findViewById(R.id.source_chooser);
         dest_spinner = (Spinner) findViewById(R.id.destination_chooser);
-        ArrayAdapter<String> srcListAdapter = new ArrayAdapter<String>(
+        ArrayAdapter<String> srcListAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_item, options);
         srcListAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
@@ -237,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
         };
         source_spinner.setAdapter(srcListAdapter);
         source_spinner.setOnItemSelectedListener(srcSpinnerListener);
-        destListAdapter = new ArrayAdapter<String>(
+        destListAdapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_item, optionsCopy);
         destListAdapter.setDropDownViewResource(
                 android.R.layout.simple_spinner_dropdown_item);
@@ -327,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
             rate = 0;
             Toast.makeText(getApplicationContext(), R.string.calcFail, Toast.LENGTH_LONG).show();
         } else {
-            rate = (double) ratesMap.get(option);
+            rate = ratesMap.get(option);
         }
         return rate;
     }
