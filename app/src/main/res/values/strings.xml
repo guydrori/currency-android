@@ -52,9 +52,10 @@
     <string name="calcFail">Calculation failed. Please wait for the rates to load</string>
     <string name="noInput">Could not calculate. Please check that you have entered a value in the Value field and that it is a positive decimal.</string>
     <string name="about">About</string>
-    <string name ="github">Source code: http://github.com/guydrori/currency-android</string>
-    <string name = "fixer">Uses the <a href = "http://www.fixer.io">fixer.io</a> API for exchange rates</string>
-    <string name = "created">Created with love in Poland :-)</string>
-    <string name = "license">The source code is licensed under the <b>Apache 2.0</b> license</string>
-    <string name="result">%1$s %2$s</string>
+    <string name="github">Source code: http://github.com/guydrori/currency-android</string>
+    <string name="fixer">Uses the <a href = "http://www.fixer.io">fixer.io</a> API for exchange rates</string>
+    <string name="created">Created with love in Poland :-)</string>
+    <string name="license">The source code is licensed under the <b>Apache 2.0</b> license</string>
+    <string name="result" translatable="false">%1$s %2$s</string>
+    <string name="dollarImage">Currency symbol</string>
 </resources>

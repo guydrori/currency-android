@@ -13,9 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/source_chooser"
-        android:spinnerMode="dropdown"
+        android:spinnerMode="dialog"
         android:layout_below="@+id/spinner_label"
         android:layout_alignLeft="@+id/spinner_label"
+        android:layout_alignStart="@+id/spinner_label"
         android:layout_alignEnd="@+id/spinner_label" />
 
     <EditText
@@ -28,6 +29,7 @@
         android:layout_below="@+id/destination_chooser"
         android:layout_alignRight="@+id/destination_chooser"
         android:layout_alignStart="@+id/destination_chooser"
+        android:layout_alignEnd="@+id/destination_chooser"
         android:layout_marginTop="10dp" />
 
     <TextView
@@ -47,13 +49,14 @@
         android:onClick="buttonClick"
         android:layout_alignBottom="@+id/result_field"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/destination_chooser"
-        android:spinnerMode="dropdown"
+        android:spinnerMode="dialog"
         android:layout_below="@+id/dest_label"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
@@ -68,6 +71,7 @@
         android:layout_below="@+id/source_chooser"
         android:layout_alignRight="@+id/destination_chooser"
         android:layout_alignStart="@+id/destination_chooser"
+        android:layout_alignEnd="@+id/destination_chooser"
         android:layout_alignParentStart="true"
         android:layout_marginTop="5dp" />
 
@@ -77,13 +81,14 @@
         android:inputType="none"
         android:ems="10"
         android:id="@+id/result_field"
-        android:editable="false"
         android:hint="@string/Result"
         android:maxWidth="5dp"
         android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
         android:layout_below="@+id/value_input"
         android:layout_toRightOf="@+id/convert_button"
+        android:layout_toEndOf="@+id/convert_button"
         android:layout_toStartOf="@+id/convert_button"
         android:layout_marginTop="10dp" />
 

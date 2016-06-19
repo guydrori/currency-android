@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/source_chooser"
-        android:spinnerMode="dropdown"
+        android:spinnerMode="dialog"
         android:layout_below="@+id/spinner_label"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -57,7 +57,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:spinnerMode="dropdown"
+        android:spinnerMode="dialog"
         android:layout_below="@+id/dest_label" />
 
     <TextView
@@ -77,7 +77,6 @@
         android:inputType="none"
         android:ems="10"
         android:id="@+id/result_field"
-        android:editable="false"
         android:hint="@string/Result"
         android:maxWidth="5dp"
         android:layout_below="@+id/value_input"

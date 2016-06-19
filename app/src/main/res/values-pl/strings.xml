@@ -7,6 +7,30 @@
         <item>Funt szterling (GBP)</item>
         <item>Nowy Izraelski Szekel (ILS)</item>
         <item>Renminbi (CNY)</item>
+        <item>Dolar australijski (AUD)</item>
+        <item>Jen japoński (JPY)</item>
+        <item>Frank szwajcarski (CHF)</item>
+        <item>Rupia indyjska (INR)</item>
+        <item>Forint węgierski (HUF)</item>
+        <item>Korona norweska (NOK)</item>
+        <item>Lew bułgarski (BGN)</item>
+        <item>Won południowokoreański (KRW)</item>
+        <item>Lej romuński (RON)</item>
+        <item>Korona czeska(CZK)</item>
+        <item>Korona duńska (DKK)</item>
+        <item>Peso meksykańskie (MXN)</item>
+        <item>Rubel rosyjski(RUB)</item>
+        <item>Dolar kanadyjski (CAD)</item>
+        <item>Kuna chorwacka (HRK)</item>
+        <item>Korona szwedzka (SEK)</item>
+        <item>Dolar hongkoński (HKD)</item>
+        <item>Dolar singapurski(SGD)</item>
+        <item>Bat tajski (THB)</item>
+        <item>Peso filipińskie (PHP)</item>
+        <item>Południowoafrykański Rand (ZAR)</item>
+        <item>Nowa lira turecka (TRY)</item>
+        <item>Real brazylisjki (BRL)</item>
+        <item>Dolar nowozelandzki (NZD)</item>
     </string-array>
     <string name="Result">Wynik</string>
     <string name="Value">Wartość</string>
@@ -32,4 +56,5 @@
     <string name="fixer">Korzysta z  API <a href="http://www.fixer.io">fixer.io</a> dla kursów walut</string>
     <string name="github">Kod źródłowy: http://github.com/guydrori/currency-android</string>
     <string name="license">Kod żrodłowy posiada licencję <b>Apache 2.0</b> </string>
+    <string name="dollarImage">Symbol walut</string>
 </resources>

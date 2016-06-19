@@ -8,6 +8,30 @@
         <item>לירות שטרלינג (GBP)</item>
         <item>שקלים חדשים (ILS)</item>
         <item>יואן סיני (CNY)</item>
+        <item>דולר אוסטרלי (AUD)</item>
+        <item>ין יפני (JPY)</item>
+        <item>פרנק שוויצרי CHF)</item>
+        <item>רופי הודי (INR)</item>
+        <item>פורינט הונגרי (HUF)</item>
+        <item>קרונה נורבגית (NOK)</item>
+        <item>לב בולגרי (BGN)</item>
+        <item>וון דרום קוריאני (KRW)</item>
+        <item>לאו רומני (RON)</item>
+        <item>קורונה צ\'כית (CZK)</item>
+        <item>קרונה דנית (DKK)</item>
+        <item>פסו מקסיקני(MXN)</item>
+        <item>רובל רוסי (RUB)</item>
+        <item>דולר קנדי (CAD)</item>
+        <item>קונה קרואטית (HRK)</item>
+        <item>קרונה שוודית (SEK)</item>
+        <item>דולג הונג קונגי (HKD)</item>
+        <item>דולר סינגפורי (SGD)</item>
+        <item>בהט תאילנדי(THB)</item>
+        <item>פסו פיליפיני (PHP)</item>
+        <item>ראנד דרום אפריקאי(ZAR)</item>
+        <item>לירה טורקית (TRY)</item>
+        <item>ריאל ברזילאי (BRL)</item>
+        <item>דולר ניו זילנדי(NZD)</item>
     </string-array>
     <string name ="convertButton">המר</string>
     <string name ="Value">ערך</string>
@@ -32,5 +56,6 @@
     <string name="fixer">משתמשת ב API <a href="http://www.fixer.io">fixer.io</a> לשערי מטבע</string>
     <string name="github">קוד מקור: http://github.com/guydrori/currency-android</string>
     <string name="license">קוד המקור ניתן תחת רישיון קוד פתוח <b>אפאשי 2.0</b></string>
+    <string name="dollarImage">סמל מטבע</string>
 
 </resources>

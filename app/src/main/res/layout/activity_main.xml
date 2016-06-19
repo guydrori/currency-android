@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/source_chooser"
-        android:spinnerMode="dropdown"
+        android:spinnerMode="dialog"
         android:layout_above="@+id/dest_label"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true" />
@@ -53,7 +53,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dialog" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,7 +70,6 @@
         android:inputType="none"
         android:ems="10"
         android:id="@+id/result_field"
-        android:editable="false"
         android:hint="@string/Result"
         android:layout_below="@+id/value_input"
         android:layout_marginTop="60dp" />
@@ -80,6 +79,7 @@
         android:layout_height="match_parent"
         android:id="@+id/imageView"
         android:src="@drawable/dollar_sign"
-        android:layout_above="@+id/spinner_label" />
+        android:layout_above="@+id/spinner_label"
+        android:contentDescription="@string/dollarImage" />
 
 </RelativeLayout>

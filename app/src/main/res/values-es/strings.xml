@@ -7,7 +7,31 @@
         <item>Dolár estadounidense (USD)</item>
         <item>Libra esterlina (GBP)</item>
         <item>Nuevo séquel (ILS)</item>
-        <item>Renminbi (CNY)</item>
+        <item>Yuan chino(CNY)</item>
+        <item>Dólar australiano (AUD)</item>
+        <item>Yen japonés (JPY)</item>
+        <item>Franco suizo (CHF)</item>
+        <item>Rupia india (INR)</item>
+        <item>Forinto húngaro (HUF)</item>
+        <item>Corona noruega (NOK)</item>
+        <item>Lev búlgaro (BGN)</item>
+        <item>Won surcoreano (KRW)</item>
+        <item>Leu romano(RON)</item>
+        <item>Corona checa (CZK)</item>
+        <item>Corona danesa (DKK)</item>
+        <item>Peso mexicano (MXN)</item>
+        <item>Rublo ruso(RUB)</item>
+        <item>Dólar canadiense (CAD)</item>
+        <item>Kuna croata (HRK)</item>
+        <item>Corona sueca (SEK)</item>
+        <item>Dólar de Hong Kong (HKD)</item>
+        <item>Dólar de Singapur (SGD)</item>
+        <item>Baht tailandés (THB)</item>
+        <item>Peso filipino (PHP)</item>
+        <item>Rand sudafricano (ZAR)</item>
+        <item>Lira turca (TRY)</item>
+        <item>Real brasileño (BRL)</item>
+        <item>Dólar neozelandés (NZD)</item>
     </string-array>
     <string name="Value">Valor</string>
     <string name="Result">Resultado</string>
@@ -16,14 +40,14 @@
     <string name="defaultRates">Los tipos de cambio estándares están disponible</string>
     <string name="destLabel">Quiero esta divisa:</string>
     <string name="dialogPositive">Continúe</string>
-    <string name="dlRatesFail">El descargo de los tipos de cambio  ha fracasado</string>
-    <string name="dlRatesSuccess">La descarga de los tipos de cambio  terminó con éxito</string>
+    <string name="dlRatesFail">El descargo de los tipos de cambio ha fracasado</string>
+    <string name="dlRatesSuccess">La descarga de los tipos de cambio terminó con éxito</string>
     <string name="downloaded">Descargado en:</string>
     <string name="fileReadSuccess">Los tipos de cambio  se han cargado con éxito</string>
     <string name="processRatesFailed">El procesamiento de las tarifas ha fracasado</string>
     <string name="sourceLabel">Tengo esa divisa:</string>
-    <string name="updateRatesSuccess">Las tarifas se han actualizado con éxito</string>
-    <string name="dialogContent">No hay tarifas actualizadas disponibles. Por eso, tarifas estándares serán cargado. ¿Usted quiere continuar?</string>
+    <string name="updateRatesSuccess">Los tipos de cambio se han actualizado con éxito</string>
+    <string name="dialogContent">No hay tipos de cambio actualizados disponibles. Por eso, tipos de cambio estándares serán cargado. ¿Usted quiere continuar?</string>
     <string name="calcFail">La calculación ha fracasado. Porfavor espiere hasta que las tarifas se cargan.</string>
     <string name="dialogNegative">Salga</string>
     <string name="noInput">El cómputo no fue posible.  Verifique porfavor sí ha entrado un valor en el campo de valor y lo es un decimal positivo. </string>
@@ -32,4 +56,5 @@
     <string name="fixer">Usa el API de <a href="http://www.fixer.io">fixer.io</a> para los tipos de cambio </string>
     <string name="github">Código fuente: http://github.com/guydrori/currency-android</string>
     <string name="license">El código fuento está bajo la licencia <b>Apache 2.0</b> </string>
+    <string name="dollarImage">Símbolo monetario</string>
 </resources>
