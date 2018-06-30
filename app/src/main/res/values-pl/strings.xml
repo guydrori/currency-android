@@ -28,4 +28,8 @@
     <string name="calcFail">Nie udało się kalkulacja. Proszę czekać do wczytania kursy</string>
     <string name="noInput">Nie udała się kalkulacja. Proszę zweryfikować czy w pole wartość jest wpisany pozytywny numer dziesiętny.</string>
     <string name="about">O aplikacji</string>
+    <string name="github">Kod źródłowy: http://github.com/guydrori/currency-android</string>
+    <string name="fixer">Korzysta z API <a href="http://www.fixer.io">fixer.io</a> dla pobrania kursów</string>
+    <string name="created">Stworzona w Polsce z miłością :-)</string>
+    <string name="license">Kod źródłowy jest udostępniany pod licencją <b>GNU GPLv3</b></string>
 </resources>

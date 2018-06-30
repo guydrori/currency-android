@@ -28,4 +28,8 @@
     <string name="dialogNegative">Salga</string>
     <string name="noInput">El cómputo no fue posible.  Verifique porfavor sí ha entrado un valor en el campo de valor y lo es un decimal positivo. </string>
     <string name="about">Información sobre la aplicación</string>
+    <string name="github">Código fuente: http://github.com/guydrori/currency-android</string>
+    <string name="fixer">Usa la API de <a href="http://www.fixer.io">fixer.io</a> para cargar las tarifas</string>
+    <string name="created">Creado con amor en Polonia :-)</string>
+    <string name="license">El código fuente es distribuido con licencia <b>GNU GPLv3</b></string>
 </resources>
